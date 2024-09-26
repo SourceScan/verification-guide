@@ -1,8 +1,9 @@
 # Verifying Smart Contracts on NEAR: Step-by-Step Guide
 
+
 Source code verification provides transparency for users interacting with smart contracts. By uploading the source code, tools like Etherscan match the compiled code with the on-chain code. This ensures end users know what they are "digitally signing" and can audit the code independently to verify its functionality.
 
-For NEAR contracts, ensuring reproducible builds for WebAssembly (WASM) is crucial. When compiling WASM, the output can vary based on hardware, operating systems, and environments. This can create challenges in ensuring that the on-chain code matches the deployed code across different environments. We managed to solve this problem by introducing NEP-330, which extends support for contract source metadata to make WASM builds reproducible.
+Ensuring reproducible WebAssembly (WASM) builds is essential for NEAR contracts. Compiling WASM can result in different outputs depending on the hardware, operating systems, and environments, making it difficult to confirm that the on-chain bytecode matches the original source. NEP-330 addresses this by extending support for contract source metadata, enabling reproducible WASM builds and verifiable source code.
 
 ### Step 1: Install Required Tools
 
