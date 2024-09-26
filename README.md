@@ -1,28 +1,8 @@
 # Verifying Smart Contracts on NEAR: Step-by-Step Guide
 
-## Introduction
-
 Source code verification provides transparency for users interacting with smart contracts. By uploading the source code, tools like Etherscan match the compiled code with the on-chain code. This ensures end users know what they are "digitally signing" and can audit the code independently to verify its functionality.
 
-For NEAR contracts, ensuring reproducible builds for WebAssembly (WASM) is crucial. When compiling WASM, the output can vary based on hardware, operating systems, and environments. This can create challenges in ensuring that the on-chain code matches the deployed code across different environments.
-
----
-
-## Problem: Reproducibility in WASM
-
-In the Solidity ecosystem, the output is always consistent across machines, making it easy to reproduce and verify the source code. However, for WASM, the compiled output must be built on the same environment to guarantee consistency.
-
-**How do we solve this?**
-
-The answer is Docker. NEAR has already provided a contract-builder Docker image for developers to use and compile their contracts inside, ensuring a consistent environment. However, it wasn’t always convenient, and there was no guarantee that a developer had used the same Docker image for their builds, making reproducibility difficult.
-
----
-
-## Solution: NEP-330 and Reproducibility
-
-NEP-330 extends support for contract source metadata to make WASM builds reproducible. This standard ensures that contracts are built in consistent environments, making verification and reproducibility possible.
-
----
+For NEAR contracts, ensuring reproducible builds for WebAssembly (WASM) is crucial. When compiling WASM, the output can vary based on hardware, operating systems, and environments. This can create challenges in ensuring that the on-chain code matches the deployed code across different environments. We managed to solve this problem by introducing NEP-330, which extends support for contract source metadata to make WASM builds reproducible.
 
 ### Step 1: Install Required Tools
 
