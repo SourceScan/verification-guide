@@ -197,7 +197,7 @@ Now that we have successfully deployed our contract with reproducible WASM code,
 
    ![nearblocks #1](./images/nearblocks-1.png)
 
-3. The new page URL will be:  
+3. The verification page URL will be:  
    [https://testnet.nearblocks.io/verify-contract?accountId=buildguide.testnet&selectedVerifier=v2-verifier.sourcescan.testnet](https://testnet.nearblocks.io/verify-contract?accountId=buildguide.testnet&selectedVerifier=v2-verifier.sourcescan.testnet)
 
    ![nearblocks #2](./images/nearblocks-2.png)
