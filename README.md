@@ -188,27 +188,31 @@ In the interactive shell, select `contract` -> `deploy` -> select the account ->
 
 ### Step 6: Trigger Contract Verification Using Nearblocks
 
-Now that we have successfully deployed our contract with reproducible WASM code, we can proceed with verification on Nearblocks.
+Now that we have successfully deployed our contract with reproducible WASM code, we can proceed with verifying it on Nearblocks.
 
-1. Navigate to the Nearblocks contract page for your deployed contract. In our case, the URL would look like this:  
-   [https://testnet.nearblocks.io/address/buildguide.testnet?tab=contract](https://testnet.nearblocks.io/address/buildguide.testnet?tab=contract)
+First, navigate to the Nearblocks contract page for your deployed contract. In this case, the URL would be:
 
-2. On this page, click on the **"Contract Code"** button. This will display the encoded WASM of your contract and provide an option to **"Verify and Publish"** the contract. Click on this option, and a new page will open.
+[https://testnet.nearblocks.io/address/buildguide.testnet?tab=contract](https://testnet.nearblocks.io/address/buildguide.testnet?tab=contract)
 
-   ![nearblocks #1](./images/nearblocks-1.png)
+Once on the contract page, click the **"Contract Code"** button. This will display the encoded WASM of your contract, along with an option to **"Verify and Publish"** the contract. Click on this option, and a new page will open.
 
-3. The verification page URL will be:  
-   [https://testnet.nearblocks.io/verify-contract?accountId=buildguide.testnet&selectedVerifier=v2-verifier.sourcescan.testnet](https://testnet.nearblocks.io/verify-contract?accountId=buildguide.testnet&selectedVerifier=v2-verifier.sourcescan.testnet)
+![nearblocks #1](./images/nearblocks-1.png)
 
-   ![nearblocks #2](./images/nearblocks-2.png)
+Next, you will be redirected to the verification page at the following URL:
 
-4. Once on the verification page, press the **"Verify Contract"** button. The verification process will begin, and after a few moments, you should see a message indicating the outcome.
+[https://testnet.nearblocks.io/verify-contract?accountId=buildguide.testnet&selectedVerifier=v2-verifier.sourcescan.testnet](https://testnet.nearblocks.io/verify-contract?accountId=buildguide.testnet&selectedVerifier=v2-verifier.sourcescan.testnet)
 
-   In our case, the message reads:  
-   **"Contract verified successfully."**
+![nearblocks #2](./images/nearblocks-2.png)
 
-   ![nearblocks #3](./images/nearblocks-3.png)
+On this page, click the **"Verify Contract"** button. The verification process will begin, and after a short wait, you should see a success message.
 
-With these steps, you've completed the verification process, and the contract's source code is now publicly accessible on Nearblocks at [https://testnet.nearblocks.io/address/buildguide.testnet?tab=contract](https://testnet.nearblocks.io/address/buildguide.testnet?tab=contract).
+In our case, the message is:  
+**"Contract verified successfully."**
 
-   ![nearblocks #4](./images/nearblocks-4.png)
+![nearblocks #3](./images/nearblocks-3.png)
+
+With these steps, you've completed the verification process, and the contract's source code is now publicly accessible on Nearblocks at the following URL:
+
+[https://testnet.nearblocks.io/address/buildguide.testnet?tab=contract](https://testnet.nearblocks.io/address/buildguide.testnet?tab=contract)
+
+![nearblocks #4](./images/nearblocks-4.png)
