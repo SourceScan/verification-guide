@@ -139,7 +139,7 @@ After initializing and pushing your code, you're ready to compile and deploy the
 Run:
 
 ```bash
-cargo near deploy
+cargo near deploy build-reproducible-wasm
 ```
 
 The code will be pulled from the remote repository for compilation, and the deployment will fail if there are any uncommitted local changes.
@@ -169,7 +169,7 @@ Our test contract was deployed to testnet successfully. The deployment transacti
 If you want to compile your contract using `cargo-near` and then deploy it using `near-cli-rs`, you can do so by running:
 
 ```bash
-cargo near build
+cargo near build reproducible-wasm
 ```
 
 This will start the compilation process and provide you with the path to the compiled `.wasm` file.
